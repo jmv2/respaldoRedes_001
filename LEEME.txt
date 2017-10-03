@@ -1,0 +1,6 @@
+Requisitos para le ejecucion del script
+
+	
+- Expect (yum install perl-Expect)
+	
+- Net::SSH::Expect (cpan Net::SSH::Expect)

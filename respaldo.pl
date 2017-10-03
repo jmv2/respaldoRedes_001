@@ -3,10 +3,10 @@
 use strict;
 use Net::SSH::Expect;
 use ConectarDB;
-my $tftp = `dig daredevil.asinco.cl +short`;
+my $tftp = "TFTP-server";
 my($dbh, $sth, $numrows);
 $dbh = ConectarDB->connect();
-$sth = $dbh->prepare('SELECT * FROM usuarios');
+$sth = $dbh->prepare('SELECT * FROM table');
 $sth->execute() or die "cuek";
 $numrows = $sth->rows;
 $sth->finish;
